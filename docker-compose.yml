@@ -1,0 +1,36 @@
+services:
+  client:
+    image: client
+    container_name: client
+    build: 
+      context: ./client
+      dockerfile: Dockerfile
+    ports:
+      - 4001:3013
+    restart: always
+    depends_on:
+      - server
+    volumes:
+      - ./client:/app
+    networks:
+      - mern_project
+
+  server:
+    image: server
+    container_name: server
+    build: 
+      context: ./server
+      dockerfile: Dockerfile
+    ports:
+      - 4002:3014
+    env_file:
+      - ./server/.env
+    volumes:
+      - ./server:/app
+    networks:
+    - mern_project
+
+networks:
+  mern_project:
+    driver: bridge
+
