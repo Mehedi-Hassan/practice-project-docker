@@ -3,7 +3,7 @@ A simple CRUD web application using MERN.
 
 # Home Page:
 Shows list of users from MongoDB database.
-screenshots/home.png
+<img src="screenshots/home.png">
 
 # Adding User:
 New user can be added by clicking on "Add User".
