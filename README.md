@@ -30,7 +30,7 @@ User info has been updated (#ID 9).
 
 # Deleting User:
 User can be deleted by clicking on "Delete".
-<img src="screenshots/delete.png">
+<img src="screenshots/updated.png">
 
 Rest of users after deleting
-<img src="screenshots/home.png">
+<img src="screenshots/delete.png">
